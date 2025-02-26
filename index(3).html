@@ -1,0 +1,263 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Anime Style Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a202c;
+            color: #cbd5e0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            padding: 1rem;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+        header nav ul li a {
+            color: #cbd5e0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        header nav ul li a:hover {
+            color: #fbbf24;
+        }
+        section {
+            padding: 5rem 1rem;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+        section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        @media(min-width: 768px) {
+            .portfolio .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media(min-width: 1024px) {
+            .portfolio .grid {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        .portfolio .grid .card {
+            background-color: #2d3748;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio .grid .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .portfolio .grid .card h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .portfolio .grid .card p {
+            font-size: 1rem;
+        }
+        .about img {
+            border-radius: 50%;
+            margin-bottom: 2rem;
+        }
+        .about p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact form .form-group {
+            margin-bottom: 1rem;
+        }
+        .contact form .form-group input,
+        .contact form .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #2d3748;
+            color: #cbd5e0;
+        }
+        .contact form .form-group textarea {
+            resize: none;
+            height: 150px;
+        }
+        .contact form button {
+            background-color: #fbbf24;
+            color: #1a202c;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact form button:hover {
+            background-color: #d97706;
+        }
+        footer {
+            background-color: #000;
+            padding: 1rem;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer .social-icons {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        footer .social-icons a {
+            color: #cbd5e0;
+            transition: color 0.3s;
+        }
+        footer .social-icons a:hover {
+            color: #fbbf24;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>My Professional Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Welcome to My Professional World</h2>
+            <p>Where creativity meets technology</p>
+            <img src="https://storage.googleapis.com/a1aa/image/7XeCCtfczdXAM66CzXxUJgjFlZ3bzfZtki6PbhVEyqY.jpg" alt="Anime style hero image with a character holding a laptop">
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/QGcdLD_JLrWpbWMhqwKrkRJmHQUTOF8YaG74YnZz7VE.jpg" alt="Project 1 thumbnail with anime style graphics">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1</p>
+                </div>
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/b8zaupE0tthTvc3YYven02JkaqGO4RvPHiQxjHQLxx0.jpg" alt="Project 2 thumbnail with anime style graphics">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2</p>
+                </div>
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/4RT-8lJ2Q5PvLmEhHf_QaVWrSGbcIF1wxFDiZGcga3g.jpg" alt="Project 3 thumbnail with anime style graphics">
+                    <h3>Project 3</h3>
+                    <p>Description of Project 3</p>
+                </div>
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/OTv5ME7ORTRMcoPbYGniXa2FS-bzFGg4xQq6sCxJONI.jpg" alt="Project 4 thumbnail with anime style graphics">
+                    <h3>Project 4</h3>
+                    <p>Description of Project 4</p>
+                </div>
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/up3wTmSSBmak0YGD9Mao6Ck1Umqb5LcaQlx0Y_CCqTw.jpg" alt="Project 5 thumbnail with anime style graphics">
+                    <h3>Project 5</h3>
+                    <p>Description of Project 5</p>
+                </div>
+                <div class="card">
+                    <img src="https://storage.googleapis.com/a1aa/image/fTo7WfCmjXNYbvpY2J4GABA92gwWTdKJs4pksa7iwKc.jpg" alt="Project 6 thumbnail with anime style graphics">
+                    <h3>Project 6</h3>
+                    <p>Description of Project 6</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/AYBwbyDyHL4dos9XiRZJcx37adwE0jHOpxYCb_0AZtQ.jpg" alt="Anime style avatar of the portfolio owner" width="300" height="300">
+            <p>
+                I am a passionate developer with a love for anime and technology. My journey in the tech world started with a fascination for how things work and has grown into a career where I get to create amazing digital experiences. When I'm not coding, you can find me watching the latest anime series or drawing my favorite characters.
+            </p>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2023 My Professional Portfolio. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
